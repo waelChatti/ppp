@@ -1,0 +1,108 @@
+body {
+    font-family: Garamond;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+}
+
+h1 {
+    color: #61dafb; /* React blue color for the heading */
+    font-size: 40px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-md-10, .col-md-8, .col-md-4 {
+    box-sizing: border-box;
+    flex: 0 0 100%;
+    padding: 0 15px;
+}
+
+.col-md-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+    border: none;
+    background-color: #555; /* Dark background for the input */
+    border-bottom: 1px solid #777; /* Slightly lighter border color */
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #6cb2eb; /* Light blue for the button */
+    transition: background-color 0.3s;
+}
+
+.btn-warning:hover {
+    background-color: #4a90e2; /* Darker blue on hover */
+}
+
+#chatbox {
+    background-color: #444; /* Dark background for the chatbox */
+    width: 100%;
+    min-height: 150px; /* Adjust the height as needed */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker box shadow for depth */
+    overflow: hidden;
+}
+
+#userInput {
+    width: 100%;
+}
+
+.userText, .botText {
+    font-family: monospace;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 5px;
+}
+
+.userText {
+    color: #ffff;
+    text-align: right;
+}
+
+.botText {
+    color: #ffff;
+    text-align: left;
+}
